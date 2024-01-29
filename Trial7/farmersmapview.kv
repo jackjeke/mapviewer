@@ -1,0 +1,9 @@
+<FarmersMapView>:
+	lat:-24.618707
+	lon:25.943467
+	zoom:10
+	on_zoom:
+		self.zoom=10 if self.zoom<10 else self.zoom
+	on_lon:self.start_getting_markets_in_fov()
+	on_lat:self.start_getting_markets_in_fov()
+
